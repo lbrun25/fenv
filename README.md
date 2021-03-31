@@ -4,7 +4,7 @@ This is a Go library to parse environment variables in a file.
 
 ## Install
 
-````
+````bash
 go get github.com/lbrun25/fenv
 ````
 
@@ -12,7 +12,7 @@ go get github.com/lbrun25/fenv
 
 Can parse any environment variable in a file
 
-````
+````yml
 server:
   hostname: ${HOSTNAME}
   port: ${PORT}
@@ -20,7 +20,7 @@ server:
 
 and returns []byte
 
-````
+````yml
 server:
   hostname: localhost
   port: 8080
@@ -28,7 +28,7 @@ server:
 
 ## Usage
 
-````
+````go
 package main
 
 import (
