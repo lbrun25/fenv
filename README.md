@@ -40,7 +40,7 @@ import (
 )
 
 func main() {
-	f := fenv.Mock()
+	f := fenv.OS()
 	
 	// Parse the file
 	newContent, err := f.Parse("./config.yml")
