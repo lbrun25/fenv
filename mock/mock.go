@@ -14,6 +14,6 @@ func (e Env) Parse(filePath string) ([]byte, error) {
 	return parser.EnvironmentVariables(filePath, e.env)
 }
 
-func NewMockEnv() domain.Env {
-	return &Env{env: venv.Mock()}
+func NewMockEnv(env venv.Env) domain.Env {
+	return &Env{env: env}
 }
